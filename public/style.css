@@ -1,0 +1,248 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
+#app {
+  width: 100%;
+}
+
+section.header {
+    background: #DBDBDB;
+    width: 100%;
+    height: 1070px;
+    text-align: center;
+    box-sizing: border-box;
+    padding-top: 50px;
+}
+
+section.body {
+    background: white;
+    width: 100%;
+    height: 1049px;
+}
+
+footer {
+    width: 100%;
+    height: 250px;
+    background: #666666;
+}
+
+section.header .head {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 16px;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 16px;
+}
+
+section.header .head div:nth-of-type(2) {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+section.header .head div {
+    margin: 0 18%;
+}
+
+section.header .head div:nth-of-type(2) span {
+    display: block;
+    border: 1px solid #000000;
+    transform: rotate(-135deg);
+    width: 8px;
+    height: 8px;
+    border-top-width: 0;
+    border-right-width: 0;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+section.header .square {
+    background: #C4C4C4;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: 268px;
+}
+
+section.header .title {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 72px;
+    line-height: 84px;
+    color: #000000;
+    margin-top: 30px;
+}
+
+section.header .description {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    text-align: center;
+    color: #000000;
+    margin-top: 30px;
+}
+
+section.header .form-container form input[type="submit"] {
+    width: 150px;
+    height: 50px;
+    background: #C6C6C6;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+}
+
+section.header .form-container {
+    margin-top: 150px;
+}
+
+section.header form {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    justify-content: center;
+}
+
+section.header form > div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 50px;
+    width: 400px;
+}
+
+section.header form > div > .head {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+section.header form > div > .head > span {
+    display: inline-block;
+    width: 50%;
+    text-align: left;
+}
+
+section.header form > div > .head > span:nth-of-type(2) {
+    margin-left: 60px;
+}
+
+section.header form > div > .body {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    background: #F3F3F3;
+    box-sizing: border-box;
+    margin-top: 10px;
+}
+
+section.header form > div .corner,
+section.header form > div .exchange {
+    position: relative;
+    left: -20px;
+    cursor: pointer;
+    width: 0;
+    overflow: visible;
+}
+
+section.header form > div .corner {
+    width: 6px;
+    height: 6px;
+    transform: rotateZ(135deg) translate(0, 50%) scale(1.8);
+    transition: transform 300ms;
+    background-color: transparent;
+    border: 1px solid black;
+    border-bottom-width: 0;
+    border-left-width: 0;
+}
+
+section.header form > div .corner:hover {
+    transform: rotateZ(-45deg) translate(-50%, -50%) scale(1.8);
+}
+
+section.header form input[type="text"] {
+    background: transparent;
+    border-width: 0;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 21px;
+    color: #666666;
+    padding: 15px 20px;
+    box-sizing: border-box;
+}
+
+section.header form input[type="text"]:focus {
+    outline: 0 !important;
+}
+
+section.header form .delimiter {
+    color: #666666;
+    font-size: 30px;
+}
+
+section.body h4 {
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    margin: 0 auto;
+    margin-top: 81px;
+    text-align: center;
+}
+
+section.body .item {
+    background: #C6C6C6;
+    width: 380px;
+    height: 380px;
+    font-family: Roboto;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 0 25px;
+}
+
+section.body .item.special {
+    width: 807px;
+}
+
+section.body .row {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+}
+
+section.body .tour-container {
+}
+
+section.header form > input[type="submit"] {
+  margin-left: 30px;
+}
