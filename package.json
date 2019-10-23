@@ -1,0 +1,28 @@
+{
+  "name": "vue-stream",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "dev": "nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AnaninAN/vue-stream.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/AnaninAN/vue-stream/issues"
+  },
+  "homepage": "https://github.com/AnaninAN/vue-stream#readme",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "mongoose": "^5.7.6"
+  },
+  "devDependencies": {
+    "nodemon": "^1.19.4"
+  }
+}
