@@ -9,10 +9,9 @@ export default {
 </script>
 
 <style lang="scss" scoped>
+  @import '../../assets/main.scss';
+
   .footer {
-    position: absolute;
-    bottom: 0;
-    left: 0;
     background: #666666;
     height: 250px;
     width: 100%;

@@ -17,17 +17,36 @@ module.exports = {
         loader: 'babel-loader',
       },
       {
-        test: /\.scss$/,
+        test: /\.(sa|sc|c)ss$/,
         use: [
+          'style-loader',
           MiniCssExtractPlugin.loader,
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        test: /\.(gif|png|jpe?g)$/,
+        use: [
           {
-            loader: 'css-loader',
-          },
-          {
-            loader: 'sass-loader',
-          },
+            loader: 'file-loader',
+            options: {
+              name: 'img/[name].[ext]'
+            }
+          }
         ]
-      }
+      },
+      {
+        test: /\.svg$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: 'svg/[name].[ext]'
+            }
+          }
+        ]
+      },
     ],
   },
   devServer: {

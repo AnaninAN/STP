@@ -1,23 +1,17 @@
 <template>
   <div>
-    <h1>Home</h1>
+    <div class="container">
+      <h1>Home</h1>
+    </div>
   </div>
 </template>
 
 <script>
 export default {
   name: 'PageHome',
-  data() {
-    return {
-
-    };
-  },
-  mounted() {
-
-  }
 }
 </script>
 
 <style lang="scss" scoped>
-
+  @import '../../assets/main.scss';
 </style>
