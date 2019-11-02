@@ -1,13 +1,5 @@
 <template>
   <div class="container form-container">
-    <style>
-    html, body {
-        margin: 0;
-        padding: 0;
-        overflow-x: hidden;
-        background-color: #C6C6C6;
-    }
-</style>
 <form class="needs-validation" novalidate>
     <div class="container col-12 d-flex justify-content-center align-item-center">
         <div class="form-row">
@@ -87,5 +79,10 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-
+html, body {
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        background-color: #C6C6C6;
+    }
 </style>
