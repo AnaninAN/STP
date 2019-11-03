@@ -1,12 +1,12 @@
 <template>
   <div class="logo">
     <div class="container">
-      <div class="row col-md-12 justify-content-center">
+      <div class="row justify-content-center">
         <p>мы планируем</p>
         <router-link :to="{ name: 'home' }" class="logo__img"></router-link>
         <p>вы отдыхаете</p>
       </div>
-      <div class="row col-md-12 justify-content-center">
+      <div class="row justify-content-center">
         <p class="logo__stp">Smart Travel Planner</p>
       </div>
     </div>
