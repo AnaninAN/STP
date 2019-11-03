@@ -5,20 +5,11 @@
     </div>
     <div class="container justify-content-around">
       <div class="row">
-        <div class="col-md-4">
-          <a href="" class="square"></a>
-        </div>
-        <div class="col-md-4">
-          <a href="" class="square"></a>
-        </div>
-        <div class="col-md-4">
-          <a href="" class="square"></a>
-        </div>
-        <div class="col-md-4">
-          <a href="" class="square"></a>
-        </div>
-        <div class="col-md-auto">
-          <a href="" class="rectangle"></a>
+        <!-- определение классов необходимо переписать через computed -->
+        <div v-for="(item, index) in routes" :key="item._id" :class="{'col-md-4': index < 4, 'col-md-auto': index == 4 }">
+          <router-link :class="{square: index < 4, rectangle: index == 4 }" :to="{ name: 'route-single', params: { id: item._id } }">
+            {{item.name}}
+          </router-link>
         </div>
       </div>
     </div>
@@ -28,6 +19,18 @@
 <script>
 export default {
   name: 'AppRecommendedRoutes',
+  data() {
+    return {
+      routes: [],
+    };
+  },
+  mounted() {
+    fetch('http://localhost:8888/routes')
+      .then((request) => request.json())
+      .then((routes) => {
+        this.routes = routes;
+      });
+  }
 }
 </script>
 
@@ -48,6 +51,9 @@ export default {
     line-height: 350px;
     height: 350px;
     background-color: #C4C4C4;
+    text-decoration: none;
+    font-size: 24px;
+    color: #000;
   }
   .square {
     width: 350px;
