@@ -7,6 +7,11 @@ routerUser.get('/', async (req, res) => {
     res.status(200).send(users);
 });
 
+routerUser.get('/:id', async (req, res) => {
+    const user = await User.findById(req.params.id);
+    res.status(200).send(user);
+});
+
 routerUser.post('/', async (req, res) => {
     let user = new User(req.body);
     user = await user.save();
