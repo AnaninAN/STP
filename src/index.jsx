@@ -1,11 +1,12 @@
+import 'bootstrap/dist/css/bootstrap.min.css';
 import 'assets/main.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-import { HomePage } from 'components/HomePage'
+import { Layout } from 'components/Layout'
 
 ReactDOM.render(
-  <HomePage />,
+  <Layout />,
   document.getElementById('root')
 );
