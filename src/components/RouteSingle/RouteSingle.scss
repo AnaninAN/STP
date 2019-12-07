@@ -1,0 +1,23 @@
+.square,
+.rectangle {
+  display: block;
+  text-align: center;
+  line-height: 350px;
+  height: 350px;
+  background-color: #C4C4C4;
+  text-decoration: none;
+  font-size: 24px;
+  color: #000;
+}
+
+.square {
+  width: 350px;
+}
+
+.rectangle {
+  width: 730px;
+}
+
+.route-single:nth-child(n+4) {
+  margin-top: 30px;
+}
