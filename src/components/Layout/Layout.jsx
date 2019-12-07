@@ -11,13 +11,13 @@ import { RouteBuildingForm } from 'components/RouteBuildingForm';
 export class Layout extends Component {
   render() {
     return (
-      <div>
+      <React.Fragment>
         <Header />
         <LogoStp />
         <RouteBuildingForm />
         <RecommendedRoutes />
         <Footer />
-      </div>
+      </React.Fragment>
     );
   }
 }
