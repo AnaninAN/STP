@@ -3,10 +3,13 @@ import 'assets/main.scss';
 
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router} from 'react-router-dom';
 
-import { Layout } from 'components/Layout'
+import { App } from 'components/App';
 
 ReactDOM.render(
-  <Layout />,
+  <Router>
+    <App />
+  </Router>,
   document.getElementById('root')
 );

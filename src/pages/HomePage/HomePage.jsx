@@ -1,4 +1,4 @@
-import './Layout.scss';
+import './HomePage.scss';
 
 import React, { Component } from 'react';
 
@@ -8,15 +8,13 @@ import { LogoStp } from 'components/LogoStp';
 import { RecommendedRoutes } from 'components/RecommendedRoutes';
 import { RouteBuildingForm } from 'components/RouteBuildingForm';
 
-export class Layout extends Component {
+export class HomePage extends Component {
   render() {
     return (
       <React.Fragment>
-        <Header />
         <LogoStp />
         <RouteBuildingForm />
         <RecommendedRoutes />
-        <Footer />
       </React.Fragment>
     );
   }

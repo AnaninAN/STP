@@ -1,7 +1,7 @@
 import './Header.scss';
 
 import React, { Component } from 'react';
-
+import { Link } from 'react-router-dom';
 import { Container, Row, Col } from 'react-bootstrap';
 
 export class Header extends Component {
@@ -11,13 +11,13 @@ export class Header extends Component {
         <Container>
           <Row className="justify-content-between">
             <Col md="1">
-                <a href="#">Главная</a>
+                <Link to="/">Главная</Link>
             </Col>
             <Col md="2">
-              <a href="#">Мои маршруты</a>
+              <Link to="/myroutes">Мои маршруты</Link>
             </Col>
             <Col md="1">
-              <a href="#">Войти</a>
+              <Link to="/login">Войти</Link>
             </Col>
           </Row>
         </Container>
