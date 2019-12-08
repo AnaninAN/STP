@@ -1,6 +1,7 @@
 import './RouteSingle.scss';
 
 import React, { Component } from 'react';
+import { Link } from 'react-router-dom';
 import PropTypes from 'prop-types';
 import classNames from 'classnames';
 import { Col } from 'react-bootstrap';
@@ -19,7 +20,7 @@ export class RouteSingle extends Component {
   static propTypes = routeType;
 
   render() {
-    const { name, li } = this.props;
+    const { name, li, _id } = this.props;
 
     const mdClass = classNames({
       '4': li < 4,
@@ -32,9 +33,9 @@ export class RouteSingle extends Component {
 
     return (
       <Col md={mdClass} className="route-single">
-        <a className={linkClass} href="#">
+        <Link className={linkClass} to={`/routes/${_id}`}>
           {name}
-        </a>
+        </Link>
       </Col>
     );
   }
